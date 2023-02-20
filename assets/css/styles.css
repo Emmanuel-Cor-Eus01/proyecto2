@@ -116,14 +116,25 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
     color: #1BF2F2;
 }
 .enlaces{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
-
 }
 .network-img{
     width: 40px;
     height: 40px;
     margin-top: 50px;
+
+}
+.cont-soc{
+    width: 40px;
+    height: 40px;
+}
+.social{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
 }
 @media screen and (max-width: 1200px) {
     .header-wrapper{
@@ -167,8 +178,29 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
     width: 50%;
 }
 }
-
-@media screen and (max-width: 768px) { .header-wrapper{
+@media screen and (max-width: 900px) {
+    .cont-enl{
+        margin-right: 70px;
+        margin-left: 70px;
+        text-align: center;
+    }
+    .enlaces{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        grid-template-rows: 2rem;
+        margin-top: 40px;
+    }
+    .foot{
+        background-color: #000000;
+        text-align: center;
+        color: white;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 768px) {
+.header-wrapper{
     display: grid;
     background-color: #00010D;
     grid-template-columns: 1fr;
@@ -186,8 +218,33 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
     height: 700px;
     width: 50%;
 }
+.cont-enl{
+    margin-right: 70px;
+    margin-left: 70px;
+    text-align: center;
 }
-@media screen and (max-width: 700px) { .header-wrapper{
+.enlaces{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-template-rows: 2rem;
+}
+.foot{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    height: 300px;
+}
+.cfoot{
+    display: grid;
+    grid-template-columns: auto ;
+    height: auto;
+    justify-content: center;
+}
+}
+@media screen and (max-width: 700px) {
+.header-wrapper{
     display: grid;
     background-color: #00010D;
     grid-template-columns: 1fr;
@@ -204,5 +261,29 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
 .add-hijo{
     height: 700px;
     width: 50%;
+}
+.cont-enl{
+    margin-right: 70px;
+    margin-left: 70px;
+    text-align: center;
+}
+.enlaces{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-template-rows: 2rem;
+}
+.foot{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    height: 300px;
+}
+.cfoot{
+    display: grid;
+    grid-template-columns: auto ;
+    height: auto;
+    justify-content: center;
 }
 }
