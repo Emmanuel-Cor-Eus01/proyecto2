@@ -30,6 +30,7 @@
     color: #ffffff;
     text-decoration: none;
     padding: 20px;
+    text-align: center;
 }
 .nav a:hover{
     color: #1BF2F2;
@@ -136,7 +137,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
     grid-template-columns: auto auto auto;
     justify-content: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1480px) {
     .header-wrapper{
         display: grid;
         background-color: #00010D;
@@ -145,6 +146,15 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
         grid-template-rows: 5rem;
         /* position: fixed; */
         width: 100%;
+    }
+    .nav{
+        width: auto;
+        justify-content: center;
+    }
+    .header-nav{
+        padding: 10px;
+        text-align: center;
+        align-self: center;
     }
     .logo{
         height: 100%;
