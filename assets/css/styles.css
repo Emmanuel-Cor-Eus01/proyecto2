@@ -7,7 +7,7 @@
 .header-wrapper{
     display: grid;
     background-color: #00010D;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     color: white;
     grid-template-rows: 5rem;
     /* position: fixed; */
@@ -99,7 +99,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
 }
 .cfoot{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     height: auto;
 }
 .logo2{
@@ -140,7 +140,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
     .header-wrapper{
         display: grid;
         background-color: #00010D;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         color: white;
         grid-template-rows: 5rem;
         /* position: fixed; */
@@ -203,7 +203,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
 .header-wrapper{
     display: grid;
     background-color: #00010D;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     color: white;
     grid-template-rows: 5rem;
     /* position: fixed; */
@@ -247,7 +247,7 @@ input[type="text"], input[type="number"], input[type="tel"], input[type="date"] 
 .header-wrapper{
     display: grid;
     background-color: #00010D;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     color: white;
     grid-template-rows: 5rem;
     /* position: fixed; */
