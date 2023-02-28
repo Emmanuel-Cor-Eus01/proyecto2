@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputPhone = document.getElementById("inputPhone");
     const inputDate = document.getElementById("inputDate");
     const tableBody = document.getElementById("tableBody");
+    const numero= 7229079727;
 
     function loadData() {
         // loadTheme();
@@ -51,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const color = inputColor.value;
         const phone = inputPhone.value;
         const date = inputDate.value;
+        const numero= 7229079727;
         if (!model) {
             return;
         }
@@ -64,6 +66,16 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             data.push({ model, size, color, phone, date });
         }
+        // Las siguientes lineas de codigo son para enviar el formulario por whatsapp
+        // var win=window.open(`https://web.whatsapp.com/${numero}
+        // ?text=Pedido%20del%20modelo:%20${model},
+        // Talla:%20${size},
+        // Color:%20${color},
+        // Telefono:%20${phone},
+        // Fecha:%20${date}
+        // `);
+
+        
         localStorage.setItem("data", JSON.stringify(data));
         loadData();
         clearForm();
